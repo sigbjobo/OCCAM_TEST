@@ -1,0 +1,54 @@
+import matplotlib.pylab as plt
+import numpy as np
+import glob
+
+def read_force(fn):
+    lines=open(fn,'r').readlines()
+
+    r=np.zeros(len(lines)//3)
+    f=np.zeros((len(lines)//3,3))
+    i=-1
+    for li in lines:
+        l=li.split()
+        if(len(l)==1):
+            i=i+1
+            r[i]=float(l[0])
+        else:
+            for a in range(len(l)):
+                f[i,a]=abs(float(l[a]))
+
+    ind=np.argsort(r)
+    r=r[ind]
+    f=f[ind,:]
+    return [r,f]
+
+plt.figure(figsize=(6,5))
+
+
+fn1= glob.glob("force*.dat")
+m=np.array([int(l.strip('.dat').strip('force')) for l in fn1],dtype=int)
+#m=m[np.argsort(m)][-6:]
+m=[36]
+for i in range(len(m)):
+    print i, m[i],14.3/m[i]
+    [r,f]=read_force("force%d.dat"%(m[i]))
+    plt.subplot(2,3,i+1)
+    #plt.plot(r,f[:,0],label=r'$F_x$')
+    #plt.plot(r,f[:,1],label=r'$F_y$')
+    plt.plot(r,f[:,2],label=r'$F_z$')
+    plt.plot(r[r>=1],138.935/r[r>=1]**2,label=r'$F_{\rm{C}}$')
+    plt.xlabel(r'$r/\rm{nm}$')
+    plt.title(r'$\alpha=%.3f~\rm{nm}^{-1}$'%(20./m[i]))
+
+plt.subplot(2,3,1)
+plt.ylabel(r'$F/\rm{kJ}~\rm{nm}^{-1}~\rm{mol}^{-1}$')
+plt.legend()
+plt.subplot(2,3,4)
+plt.ylabel(r'$F/\rm{kJ}~\rm{nm}^{-1}~\rm{mol}^{-1}$')
+
+plt.tight_layout()
+plt.savefig('two_fft.pdf')
+plt.show()
+print r
+print f
+    

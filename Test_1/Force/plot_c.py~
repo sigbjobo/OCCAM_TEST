@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pylab as plt
+
+
+ke=138.93545528915712
+def Coulomb_z(d,L,n):
+    
+    fz=0.0
+    for ix in range(-n,n):
+        for iy in range(-n,n):
+            for iz in range(-n,n):
+                n_vec=np.array([ix,iy,iz])
+                fz = fz + (d+n_vec[2]*L)/(np.linalg.norm([d,0,0]+n_vec*L))**3
+    return fz*138.93545528915712
+         
+
+r=np.linspace(1,2.5,100)
+#plt.plot(r,ke/r**2)
+plt.plot(r,100*(1 -(ke/r**2)/Coulomb_z(r,10,20)))
+plt.show() 

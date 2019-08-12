@@ -1,0 +1,19 @@
+import numpy as np
+import sys 
+#data=np.loadtxt(sys.argv[1])
+LX=float(sys.argv[1])
+LY=float(sys.argv[2])
+LZ=float(sys.argv[3])
+
+
+
+
+fp=open('forces_exact.dat','w')
+
+d=np.linspace(0,1,100)
+
+for di in d:
+    forcex=8.33**(-1)*2*np.pi*np.sin(np.pi/2.+di*2*np.pi)/LX
+    forcey=8.33**(-1)*2*np.pi*np.sin(np.pi/2.+di*2*np.pi)/LY
+    forcez=8.33**(-1)*2*np.pi*np.sin(np.pi/2.+di*2*np.pi)/LZ
+    fp.write('%f %f %f %f\n'%(di,forcex,forcey,forcez))

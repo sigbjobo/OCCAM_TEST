@@ -1,0 +1,29 @@
+
+
+rm -rf sim
+mkdir sim
+cd sim
+
+# echo 'Parallel simulation'
+cp -r ../input/* .
+bash ${SHELL_PATH}/run_para2.sh  
+python ../COMP_PRESSURE_PROFILES.py 1
+cp fort.7 fort.7_parallel
+mkdir para
+cp {fort.7,*.dat} para/
+wait
+
+echo 'Serial simulation'
+rm fort.1[1-9]
+mv fort.1_serial fort.1
+../occamcg
+python ../COMP_PRESSURE_PROFILES.py 1
+cp fort.7 fort.7_serial
+mkdir serial
+cp {fort.7,*.dat} serial/
+
+cp -r {serial,para} ../../test_results/test_4
+# cat fort.7 | grep 'force_i 000000001  W' | awk '{print $4, $5, $6, $7, $8, $9 }' > forces.dat
+# python ../comp_exact.py 15 15 15
+# cp  {forces.dat,forces_exact.dat} ../../test_results/test_3
+cd ..

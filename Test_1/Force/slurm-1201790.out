@@ -1,0 +1,47 @@
+20
+40
+80
+160
+320
+comp_error.sh: line 14: 13978 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14022 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14069 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14113 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14161 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14190 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14245 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14293 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14342 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14390 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14437 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14487 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14533 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14562 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14609 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14655 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14703 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14731 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14781 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14825 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14873 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14918 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 14961 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15006 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15052 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15098 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15145 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15175 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15221 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15266 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15312 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15342 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15389 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15439 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15487 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15531 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15563 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15608 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15656 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15700 Killed                  ./occamcg_pol >> force${j}.dat
+comp_error.sh: line 14: 15731 Killed                  ./occamcg_pol >> force${j}.dat
+slurmstepd: error: Exceeded step memory limit at some point.

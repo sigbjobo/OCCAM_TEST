@@ -1,0 +1,25 @@
+
+
+rm -rf sim
+mkdir sim
+cd sim
+
+cp ../input/* .
+
+for mi in `seq 20 2 30`
+do
+
+    echo $mi
+    rm force${mi}.dat
+
+    python ../change_fort3.py fort.3 $mi
+    for di in `seq 0. 0.05 5`
+    do
+	python ../change_fort5.py fort.5 $di $mi
+	echo $di  >> force${mi}.dat 
+	${SHELL_PATH}/run_para.sh  
+	cat fort.7 | grep ''
+ >> force${mi}.dat
+    done
+done
+
