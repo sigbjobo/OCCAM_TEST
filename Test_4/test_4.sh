@@ -6,7 +6,7 @@ cd sim
 
 # echo 'Parallel simulation'
 cp -r ../input/* .
-bash ${SHELL_PATH}/run_para2.sh  
+bash ${SHELL_PATH}/run_para.sh  
 python ../COMP_PRESSURE_PROFILES.py 1
 cp fort.7 fort.7_parallel
 mkdir para

@@ -1,0 +1,185 @@
+ * Parallel OCCAM version: 2010.12.10  *
+  OCCAMMPI MD Run :
+ 
+  read in input data  ******
+  DEFAULT                                
+  RF dielectric Constant has not been set
+  I use default value =    1.00000000000000     
+ 
+  DEFAULT                              
+  nlist updating freq. has not been set
+  I use default value =           10
+ 
+  DEFAULT                              
+  isothermal compressibility has not been set
+  I use default value =   4.440000000000000E-010
+ 
+  *************************************
+  VELOCITIES                           
+  velocities read from configuration file 
+                                          
+ WARINING: force-printing is turned on,
+ this can lead to significant loss of performance
+ title: POPG                                    
+ number of atoms:                     2
+ cutoff distance:           0.600000000000000     
+ neighbor list cut_off       1.20000000000000     
+ Dielectric Constant         1.00000000000000     
+ RF Dielectric Constant         1.00000000000000     
+ time step length:                           0.000000000000000E+000
+ number of time steps:                                1
+ 
+ DNA:           0
+ 
+ equation of state parameter, a=  0.000000000000000E+000
+ 
+ 
+ Smooting of laplacian, sigma_lap=  0.600000000000000     
+ 
+ Serial computation of fft:
+ 
+ _--------------------------------------------_
+ ANGLE POTENTIAL harmonic in theta    
+ _--------------------------------------------_
+ _--------------------------------------------_
+ SIMULATION RUNNING IN MEAN FIELD APPROXIMATION
+ you set  SCMF                                     method
+  Intermolecular Interactions are replaced by _
+   Density Mean Field                         _
+ _--------------------------------------------_
+ _--------------------------------------------_
+             OCCAM NVT Simulation  
+              Andersen thermostat
+ _--------------------------------------------_
+ Target temperature:            300.000000000000     
+ Temperature coupling is:   0.100000000000000     
+ exclusions type:   1_2            
+ Density AVERAGING
+ For Density averaging a config every           50
+ steps will be used                         
+ for a total of            1  confs
+  
+ ******************** Reading Model File ***********************
+  
+  
+# of different  types=    3(Max   15)
+ 
+  
+  Type     Label     Mass/(g/mole)     Charge/e
+     1      NA         72.0000000      1.00000
+     2      CL         72.0000000     -1.00000
+     3      W          72.0000000      0.00000
+  
+# of different  types=    0(Max   10)
+           0  bond types length force_const
+  
+# of different  types=    0(Max   20)
+           0  angle types  theta0  force constant
+  
+# of different  types=    0(Max   20)
+           0   dihedral types  type1-type2-type3-type4
+  C0 to C5  Coefficient on the next line         
+ 
+  **********************************************
+  ANALYTICAL LENNARD-JONES NON BONDED POTENTIALS
+  **********************************************
+ 
+ Lorentz-Berthelot mixing rules ON
+ 
+ Type 1  Type 2  sigma  epsilon
+  1 NA          1 NA          0.4700             1.00000
+  2 CL          2 CL          0.4700             1.00000
+  3 W           3 W           0.4700             1.00000
+ PROVA EPS SIGMA CHARGE
+ nnbtyp, sigma eps           1  0.470000000000000        1.00000000000000     
+ nnbtyp, sigma eps           2  0.470000000000000        1.00000000000000     
+ nnbtyp, sigma eps           3  0.470000000000000        1.00000000000000     
+ Chi Matrix
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ total atom number is             2
+   
+ CHECKCON first Check passed
+ No. of atoms indicated in the input file            2
+ is consistent with conf_topol             2
+ CHECKCON Second Connectivity Check passed
+ *****************************************
+ Number of Molecules , Atoms and connectivity
+ seem to be consistent 
+ 
+ *****************************************
+ SCF SIMULATION:  CELL INDEXING
+ *****************************************
+ NCELL =       27000
+ building             3  meshes with        27000 cells
+ in a           30  X           30  X           30  Lattice
+ 
+ Box Length    X , Y , X      20.0000000000000        20.0000000000000     
+   20.0000000000000     
+ Cell dimensions lx, ly, lz    0.666666666666667       0.666666666666667     
+  0.666666666666667     
+ 
+ MDINIT
+ 
+           1   72.0000000000000     
+ total molecular weight:    144.000000000000     
+ mass density:             2.989017899999999E-002
+   force_i 000000000  NA            0.5307100000      0.5585400000      0.3905965000    -18.0582380029    -39.1133922492    -34.4182994177
+   force_i 000000000  CL            0.5307100000      0.5585400000      0.6405950000    -19.1586193660    -41.5231813529     34.5435513941
+ MDCYCLE
+   force_i 000000001  NA            0.5307100000      0.5585400000      0.3905965000    -18.0582380029    -39.1133922492    -34.4182994177
+   force_i 000000001  CL            0.5307100000      0.5585400000      0.6405950000    -19.1586193660    -41.5231813529     34.5435513941
+ step no.             1
+           1  0.000000000000000E+000 vbond
+           1  0.000000000000000E+000 vangle_cos
+           1  0.000000000000000E+000 vangle
+           1  0.000000000000000E+000 vtors
+           1  0.000000000000000E+000 nonbond inter
+           1  0.000000000000000E+000 nonbond intra
+           1  0.000000000000000E+000 vscf1
+           1  0.000000000000000E+000 vscf2
+           1  0.000000000000000E+000 v_scf
+           1  0.000000000000000E+000 P_scf zero
+           1  1.522127328044195E-006  W[phi(r)]
+           1  0.000000000000000E+000  W_chi[phi(r)]
+           1  1.522127328044195E-006  W_komp[phi(r)]
+           1  0.000000000000000E+000  W_grad[phi(r)]
+           1  0.000000000000000E+000 nonbond total
+           1  0.000000000000000E+000  nonbond tot + mean field
+           1  0.000000000000000E+000 ekin
+           1  0.000000000000000E+000 epot non-shifted
+           1  0.000000000000000E+000 epot shifted
+           1  0.000000000000000E+000 etot non-shifted
+           1  0.000000000000000E+000 etot shifted
+           1  1.522127328044195E-006 etot_W
+           1  0.000000000000000E+000 temp
+           1   1.88223941160479      press  
+           1   1.88223941168563      pressxx  
+           1   1.88223941160034      pressyy  
+           1   1.88223941152838      presszz  
+           1   1.88223941160479      press_avg  
+           1   1.88223941168563      pressxx_avg 
+           1   1.88223941160034      pressyy_avg 
+           1   1.88223941152838      presszz_avg 
+           1  0.000000000000000E+000 KIN_press  
+           1  0.000000000000000E+000 KIN_press_avg  
+           1  0.000000000000000E+000 PP_press_
+           1  0.000000000000000E+000 PP_press_avg
+           1  2.846440308048107E-013 PF_press_0
+           1  0.000000000000000E+000 PF_press_1
+           1  0.000000000000000E+000 PF_press_1_xx
+           1  0.000000000000000E+000 PF_press_1_yy
+           1  0.000000000000000E+000 PF_press_1_zz
+           1   1.88223941151274      ELEC0_press
+           1  1.726068647453320E-010 ELEC1_press_xx
+           1  8.732317252820418E-011 ELEC1_press_yy
+           1  1.536235663696354E-011 ELEC1_press_zz
+           1   20.0000000000000      L_x
+           1   20.0000000000000      L_y
+           1   20.0000000000000      L_z
+           1  2.989017900000000E-002 dens
+           1   8000.00000000000      vol
+           1  0.000000000000000E+000 bond virial
+           1  0.000000000000000E+000 angle virial
+           1  0.000000000000000E+000 nonbonded virial

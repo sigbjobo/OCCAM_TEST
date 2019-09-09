@@ -17,7 +17,7 @@ cd sim_water
 
 echo 'Parallel simulation'
 cp -r ../input_water/* .
-bash ${SHELL_PATH}/run_para2.sh  
+bash ${SHELL_PATH}/run_para.sh  
 mv fort.7 fort.7_parallel
 ana_sim fort.7_parallel TOTAL_DENS_PARA.dat
 

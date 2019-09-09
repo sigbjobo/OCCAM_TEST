@@ -9,6 +9,6 @@ cp -r input/* sim/
 cd sim/
 
 #Run simulation
-bash ${SHELL_PATH}/run_para2.sh
+bash ${SHELL_PATH}/run_para.sh
 python ../COMP_PRESSURE_PROFILES.py 16 16 36
 cd ..

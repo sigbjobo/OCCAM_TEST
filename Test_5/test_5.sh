@@ -10,7 +10,7 @@ cp -r input/* sim/
 cd sim/
 
 #Run simulation
-bash ${SHELL_PATH}/run_para2.sh
+bash ${SHELL_PATH}/run_para.sh
 
 #Analyze simulation
 timestep=$(grep -A1 'time_step:' fort.1|grep -v "time_step:")
