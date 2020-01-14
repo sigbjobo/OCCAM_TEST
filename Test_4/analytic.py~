@@ -1,0 +1,8 @@
+import numpy as np
+z=np.linspace(0,1,100)*14
+force=1.5*(np.exp(-0.0533111*(-7 + z)**4)* (0.639733 - 0.0454732*(-7 + z)**4)*(-7 + z)**2)
+phi_div=0.213244* np.exp(-0.0533111* (-7 + z)**4) *(-7 + z)**3
+fp=open('scf_press_ana.dat','w')
+for i in range(len(z)):
+    fp.write("%f %f %f %f\n"%(z[i]/14.,8.33*0.5*phi_div[i]**2/6.022E-7,8.33*0.5*phi_div[i]**2/6.022E-7,8.33*1.5*phi_div[i]**2/6.022E-7))
+fp.close()

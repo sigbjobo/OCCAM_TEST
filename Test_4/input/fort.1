@@ -9,9 +9,9 @@ nl_cutoff:
 nl_size:
 30000
 time_step:
-0.03
+0.00
 number_of_steps:
-1000
+10000
 velocity_read:
 yes
 simulated_ensemble:       
@@ -21,11 +21,11 @@ target_temperature:
 collision_frequen:
 7.00
 angle_function:
-1
+2
 mean_field:
 SCMF
 SCF_lattice_update:
-1
+10
 num_config_acc:
 1
 pot_calc_freq:
@@ -47,7 +47,9 @@ dielectric_constant:
 alpha: 0.76
 4.5
 sigma: 0.47
-0.65
+1
+sigma_lap:
+1.
 DNA:
 0
 dens_preset:

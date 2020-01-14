@@ -105,8 +105,10 @@ if(int(sys.argv[1])):
 
     NZ=len(C)+1
     # BOND
+    comp_hist('fort.16','bond_press_detail.dat',NZ*3)
     comp_hist('fort.16','bond_press.dat',NZ)
 
+    
     # ANGLE
     comp_hist('fort.17','angle_press.dat',NZ)
     
@@ -166,6 +168,12 @@ print("DIHEDRAL xx:     %e"%(np.mean(D[:,0])))
 print("DIHEDRAL yy:     %e"%(np.mean(D[:,1])))
 print("DIHEDRAL zz:     %e"%(np.mean(D[:,2])))
 
+#PP
+print("PP TOT:    %e"%(np.mean(np.sum(A[:,]+B[:,]+D[:,],axis=1)/3.)))
+print("PP xx:     %e"%(np.mean(A[:,0]+B[:,0]+D[:,0])))
+print("PP yy:     %e"%(np.mean(A[:,1]+B[:,1]+D[:,1])))
+print("PP zz:     %e"%(np.mean(A[:,2]+B[:,2]+D[:,2])))
+ 
 
 #SAVE COMBINED PROFILES
 fp = open('PRESS_TOT.dat','w')

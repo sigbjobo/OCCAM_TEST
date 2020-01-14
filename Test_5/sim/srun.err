@@ -1,0 +1,50 @@
+forrtl: severe (408): fort: (8): Attempt to fetch from allocatable variable D when it is not allocated
+
+Image              PC                Routine            Line        Source             
+occamcgmpi         00000000005FB320  Unknown               Unknown  Unknown
+occamcgmpi         000000000057200D  dens_xyz_grad_             85  dens_xyz_grad.F
+occamcgmpi         0000000000529119  mdcycle_                  220  mdcycle.F
+occamcgmpi         000000000040561C  MAIN__                    177  main.F
+occamcgmpi         0000000000404E4E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8E58C5E495  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404D69  Unknown               Unknown  Unknown
+forrtl: severe (408): fort: (8): Attempt to fetch from allocatable variable D when it is not allocated
+
+Image              PC                Routine            Line        Source             
+occamcgmpi         00000000005FB320  Unknown               Unknown  Unknown
+occamcgmpi         000000000057200D  dens_xyz_grad_             85  dens_xyz_grad.F
+occamcgmpi         0000000000529119  mdcycle_                  220  mdcycle.F
+occamcgmpi         000000000040561C  MAIN__                    177  main.F
+occamcgmpi         0000000000404E4E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B146AAE2495  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404D69  Unknown               Unknown  Unknown
+forrtl: severe (408): fort: (8): Attempt to fetch from allocatable variable D when it is not allocated
+
+Image              PC                Routine            Line        Source             
+occamcgmpi         00000000005FB320  Unknown               Unknown  Unknown
+occamcgmpi         000000000057200D  dens_xyz_grad_             85  dens_xyz_grad.F
+occamcgmpi         0000000000529119  mdcycle_                  220  mdcycle.F
+occamcgmpi         000000000040561C  MAIN__                    177  main.F
+occamcgmpi         0000000000404E4E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B01E1FB9495  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404D69  Unknown               Unknown  Unknown
+forrtl: severe (408): fort: (8): Attempt to fetch from allocatable variable D when it is not allocated
+
+Image              PC                Routine            Line        Source             
+occamcgmpi         00000000005FB320  Unknown               Unknown  Unknown
+occamcgmpi         000000000057200D  dens_xyz_grad_             85  dens_xyz_grad.F
+occamcgmpi         0000000000529119  mdcycle_                  220  mdcycle.F
+occamcgmpi         000000000040561C  MAIN__                    177  main.F
+occamcgmpi         0000000000404E4E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B822AD55495  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404D69  Unknown               Unknown  Unknown
+forrtl: severe (408): fort: (8): Attempt to fetch from allocatable variable D when it is not allocated
+
+Image              PC                Routine            Line        Source             
+occamcgmpi         00000000005FB320  Unknown               Unknown  Unknown
+occamcgmpi         000000000057200D  dens_xyz_grad_             85  dens_xyz_grad.F
+occamcgmpi         0000000000529119  mdcycle_                  220  mdcycle.F
+occamcgmpi         000000000040561C  MAIN__                    177  main.F
+occamcgmpi         0000000000404E4E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B6050CD8495  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404D69  Unknown               Unknown  Unknown
